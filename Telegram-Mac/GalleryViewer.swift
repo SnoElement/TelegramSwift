@@ -1680,6 +1680,7 @@ class GalleryViewer: NSResponder {
                 
             })
         } else {
+            pager.selectedItem?.disappear(for: nil)
             window.orderOut(nil)
             viewer = nil
             playPipIfNeeded()
